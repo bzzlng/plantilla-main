@@ -1,0 +1,175 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+	background-color: #7098bc;
+	margin: 0px;
+}
+
+/* DIV CONTENEDOR GENERAL */
+#wrapper {
+	width: 90%;
+	margin: auto;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	background-image: url("../images/banner.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#logo {
+	width: 16%;
+	margin-left: 60px;
+ }
+#logotext {
+	width: 40%;
+	margin-left: 120px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middleInicio {
+	width: 100%;
+    background-color: #d5d9e5; 
+    overflow: auto;
+}
+
+#content {
+    /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
+	width: 80%;
+	float: left;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px;   
+	background-image: linear-gradient(to top, rgba(213,217,229,255), rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)),
+    url('../images/startImg.jpg');
+    height: 900px;
+}
+* {
+	font-family: sans-serif;
+}
+.title {
+	font-size: 80px;
+	color: #64769f;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 150px;
+}
+#content p:nth-child(2) {
+	margin: 400px 20px 60px 20px;
+	font-size: 15px;
+	color: #181b50;
+}
+.subtitle {
+	font-size: 25px;
+	font-weight: bolder;
+	color: #64769f;
+	margin: 40px 20px 10px 20px;
+	text-align: center;
+}
+.subcontent {
+	margin: 10px 20px 10px 20px;
+	font-size: 15px;
+	color: #181b50;
+}
+#content ul {
+	margin: 0px 20px 0px 20px;
+	font-size: 15px;
+	color: #181b50;
+	list-style-image: url(https://mozilla.github.io/foundation-icons/svgs/checkmark-circle.svg);
+}
+ul {
+	list-style-type: square;
+}
+#sideRight {
+	float: left;
+	width: 20%;	
+	background-image: linear-gradient(#ffffff, #b36da3)
+}
+.sidebar p {
+	margin: 50px;
+	border-style: hidden;
+}
+.sidebar {
+	text-align: center;
+	font-size: 15px;
+}
+.sidebar p:hover {
+	background-color: #b36da3ab;
+	color: #ffffff;
+	font-size: 20px;
+}
+.sidebar img:last-child {
+	margin-bottom: 220px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    float: left;
+	clear: left;
+	height: 90px;
+	background: #ffffff;
+	border-top: solid;
+	border-width: 10px;
+	border-color: #7098bc;
+	width: 100%;
+}
+#footer span {
+	display: inline-block;
+}
+#x {
+	background-image: url('../images/iconX.png');
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+}
+#facebook {
+	background-image: url('../images/iconFace.png');
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+}
+#instagram {
+	background-image: url('../images/iconInsta.png');
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+}
+#x:hover {
+	background-image: url('../images/iconX1.png');
+}
+#facebook:hover {
+	background-image: url('../images/iconFace1.png');
+}
+#instagram:hover {
+	background-image: url('../images/iconInsta1.png');
+}
+/* FORMIGAL */
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+    background-color: #d5d9e5; 
+    overflow: auto;
+}
+.blankContent {
+	width: 100%;
+	float: left;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px;   
+	background-image: linear-gradient(to top, rgba(213,217,229,255), rgba(255, 255, 255, 0), rgb(255, 255, 255, 1));
+    height: 900px;
+}
+#estacionContent p:first-child {
+	font-size: 80px;
+	color: #64769f;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 150px;
+}
+.line {
+	border: 1px, dashed, #64769f;
+}
+#mapafp {
+	size-adjust: 10%;	
+}
