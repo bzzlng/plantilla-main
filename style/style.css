@@ -70,14 +70,11 @@ body {
 	font-size: 15px;
 	color: #181b50;
 }
-#content ul {
+ul {
 	margin: 0px 20px 0px 20px;
 	font-size: 15px;
 	color: #181b50;
 	list-style-image: url(https://mozilla.github.io/foundation-icons/svgs/checkmark-circle.svg);
-}
-ul {
-	list-style-type: square;
 }
 #sideRight {
 	float: left;
@@ -142,14 +139,14 @@ ul {
 #instagram:hover {
 	background-image: url('../images/iconInsta1.png');
 }
-/* FORMIGAL */
+/* FORMIGAL-PANTICOSA */
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
 	width: 100%;
-    background-color: #d5d9e5; 
+    background-color: #ffffff; 
     overflow: auto;
 }
 .blankContent {
@@ -158,6 +155,7 @@ ul {
     background-color: hsl(0, 0%, 100%);
     padding: 0px;   
 	background-image: linear-gradient(to top, rgba(213,217,229,255), rgba(255, 255, 255, 0), rgb(255, 255, 255, 1));
+
 }
 #estacionContent p:first-child {
 	font-size: 80px;
@@ -169,6 +167,63 @@ ul {
 .line {
 	border: 1px, dashed, #64769f;
 }
-#mapafp {
-	size-adjust: 10%;	
+.mapa {
+	height: auto;
+	width: 1367px;
 }
+.column {
+	float: left;
+	width: 23%;
+	padding: 10px;
+	height: 300px;
+
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 100px;
+}
+iframe {
+margin: 40px;
+}
+
+
+/* CERLER */
+
+
+
+
+/* JAVALAMBRE-VALDELINARES */
+
+/* Tarifas */
+.tarifa table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.tarifa table, th, td {
+	border-bottom: dotted #b36da3 3px;
+	border-collapse: collapse;
+	text-align: center;
+}
+.tarifa th {
+	height: 50px;
+}
+.tarifa tr:nth-child(even) {
+	background-color: #2917ef39;
+}
+.tarifa tr:hover {
+	background-color: #b36da3;
+	color: white;
+}
+
+/* Fotos */
+.foto {
+	width: 350px;
+	height: 350px;
+	filter: saturate(3);
+	margin: 50px;
+	border-radius: 50px;
+}
+
+
