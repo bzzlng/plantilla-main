@@ -217,6 +217,7 @@ margin: 40px;
 	color: white;
 }
 
+
 /* Fotos */
 .foto {
 	width: 350px;
@@ -227,3 +228,31 @@ margin: 40px;
 }
 
 
+
+/* formulario */
+form {
+	margin: 40px 300px 40px;
+}
+fieldset:first-child input {
+	width: 100%;
+}
+fieldset {
+	color: #64769f;
+}
+input {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px dashed #64769f;
+	border-radius: 9px;
+	box-sizing: border-box;
+}
+
+
+/* colaboradores */
+.partner {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+	display: inline;
+}

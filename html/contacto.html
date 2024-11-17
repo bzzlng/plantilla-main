@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../style/style.css" />
+		<link rel="stylesheet" href="../style/styles.css">
+            <!-- Script para los menús -->
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="../js/script.js"></script>
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="header">
+				<img src="../images/aramonLogo.png" alt="Aramon Logo" id="logo">
+				<img src="../images/aramonText.png" alt="Aramon Text" id="logotext">
+			</div>
+			<!-- MENU-->
+			<nav id='menu'>
+				<input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+				<ul>
+				<li><a href='index.html'>Inicio</a></li>
+				<li><a class='dropdown-arrow' href='index.html'>Estaciones</a>
+					<ul class='sub-menus'>
+					<li><a href='formigal-panticosa.html'>Formigal-Panticosa</a></li>
+					<li><a href='cerler.html'>Cerler</a></li>
+					<li><a href='javalambre-valdelinares.html'>Javalambre-Valdelinares</a></li>
+					</ul>
+				</li>
+				<li><a href='tarifas.html'>Tarifas</a></li>
+				<li><a class='dropdown-arrow' href='index.html'>Galería</a>
+					<ul class='sub-menus'>
+					<li><a href='fotos.html'>Fotos</a></li>
+					<li><a href='videos.html'>Vídeos</a></li>
+					</ul>
+				</li>
+				<li><a href='contacto.html'>Contacto</a></li>
+				<li><a href='colaboradores.html'>Colaboradores</a></li>
+				</ul>
+			</nav>
+            <!-- Div central -->		
+			<div class="middle">
+				<!--Panel--> 
+				<div class="blankContent">
+                   <p class="title">Contacto</p> 
+                   <div class="line"></div>
+                   <form>
+                        <fieldset>
+                            <legend>Introduce tus datos</legend>
+                            <label for="nombre">Nombre:</label><input type="text" name="nombre" required autofocus><br><br>
+                            <label for="apellido1">Apellido 1:</label><input type="text" name="apellido1" required><br><br>
+                            <label for="apellido2">Apellido 2:</label><input type="text" name="apellido2"><br><br>
+                            <label for="dni">DNI/NIE:</label><input type="number" name="dni"><br><br>
+                            <label for="correo">Correo electrónico:</label><input type="email" name="correo" required multiple placeholder="example@ejemplo.com"><br><br>
+                            <label for="telefono">Teléfono:</label><input type="tel" name="telefono" required><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Detalles del asunto</legend>
+                            <label for="asunto">Por favor, indique el asunto a tratar.</label>
+                            <select name="asunto" size="3" multiple>
+                                <option value="consultaGeneral" selected>Consulta general</option>
+                                <option value="reservasYDisponibilidad">Reservas y disponibilidad</option>
+                                <option value="informacion">Información sobre actividades</option>
+                                <option value="feedback">Sugerencias y comentarios</option>
+                                <option value="forfaitsYPrecios">Preguntas sobre forfaits y precios</option>
+                                <option value="reclamaciones">Reclamaciones</option>
+                                <option value="otros">Otros</option>
+                            </select><br><br>
+                            <label for="mensaje">Describa el asunto a tratar.</label>
+                            <textarea name="mensaje" rows="10" cols="30" placeholder="Escriba en esta área"></textarea><br><br>
+                            <label for="codigo">Indique su código de cliente si perteneces al Club de Aramón</label>
+                            <input type="password" name="codigo">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Fecha de visita o interés</legend>
+                            <label for="fechaIda">Escriba su fecha de ida:</label>
+                            <input type="date" name="fechaIda"><br><br>
+                            <label for="fechaVuelta">Escriba su fecha de vuelta:</label>
+                            <input type="date" name="fechaVuelta"><br><br>
+                            <label for="estacion">¿En qué estación estás interesado/a?</label><br><br>
+                            <input type="radio" name="estacion" value="formigal"><label>Formigal</label><br><br>
+                            <input type="radio" name="estacion" value="panticosa"><label>Panticosa</label><br><br>
+                            <input type="radio" name="estacion" value="cerler"><label>Cerler</label><br><br>
+                            <input type="radio" name="estacion" value="javalambre"><label>Javalambre</label><br><br>
+                            <input type="radio" name="estacion" value="valdelinares"><label>Valdelinares</label><br><br>
+                            <label for="color">Elige un color de pista:</label>
+                            <input type="color" name="color"><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Método de contacto</legend>
+                            <label for="contacto">¿Por qué via desea que le contactemos?</label><br><br>
+                            <input list="contacto">
+                            <datalist id="contacto">
+                                <option value="WhatsApp">
+                                <option value="Teléfono">
+                                <option value="Correo electrónico">
+                            </datalist><br><br>
+                            <label for="hora">¿A qué hora le conviene que le contactemos?</label><br><br>
+                            <input type="time" name="hora"><br><br>
+                        </fieldset>
+                        <label for="politica">Al enviar este formulario, aceptas nuestra política de privacidad y el tratamiento de tus datos conforme a la normativa vigente.</label><br>
+                        <input type="checkbox" name="politica"><label>Acepto</label><br>
+                        <input type="submit" value="Enviar"><input type="reset" value="Borrar">
+                    </form>
+                </div>
+            </div>
+			<!-- #footer -->
+			<div id="footer">
+				<a href="https://x.com/GrupoAramon" target="_blank"><span id="x"></span></a>
+				<a href="https://www.facebook.com/grupoaramon" target="_blank"><span id="facebook"></span></a>
+				<a href="https://www.instagram.com/grupoaramon/" target="_blank"><span id="instagram"></span></a>
+			</div>			
+    </body>
+</html>
